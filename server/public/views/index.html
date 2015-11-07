@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+
+    <script type="text/javascript" src="/vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+</head>
+<body>
+    <div class="inputcontainer well">
+        <form id="inputForm" class="">
+
+            <div class="row">
+                <label for="numberOfEmployees" class="">Number of Employees: </label>
+                <input type="text" id="numberOfEmployees" name="numberOfEmployees">
+            </div>
+            <div class="row">
+                <label for="gender" class="">Gender: </label>
+
+                <select id="gender" name="gender">
+                    <option value="both">Both</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="salaryRangeMin" class="">Salary Range Min: </label>
+                <input type="text" id="salaryRangeMin" name="salaryRangeMin">
+            </div>
+            <div class="row">
+                <label for="salaryRangeMax" class="">Salary Range Max: </label>
+                <input type="text" id="salaryRangeMax" name="salaryRangeMax">
+            </div>
+            <div class="row">
+                <label for="yearsOfServiceMin" class="">Years of Service Min: </label>
+                <input type="text" id="yearsOfServiceMin" name="yearsOfServiceMin">
+            </div>
+            <div class="row">
+                <label for="yearsOfServiceMax" class="">Years of Service Max: </label>
+                <input type="text" id="yearsOfServiceMax" name="yearsOfServiceMax">
+            </div>
+            <div class="row">
+                <button id="submitGenerate" class="btn btn-info">Generate</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="employeeCalculations"></div>
+
+    <div class="employeeList"></div>
+</body>
+</html>
